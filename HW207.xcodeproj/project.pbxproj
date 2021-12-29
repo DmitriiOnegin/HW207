@@ -15,6 +15,9 @@
 		19806A8C277CE9210039175B /* FirstTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19806A8B277CE9210039175B /* FirstTableViewController.swift */; };
 		19806A8E277CE9DB0039175B /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19806A8D277CE9DB0039175B /* DataManager.swift */; };
 		19806A90277CEA080039175B /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19806A8F277CEA080039175B /* Person.swift */; };
+		19806A92277CFB5C0039175B /* DetaleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19806A91277CFB5C0039175B /* DetaleViewController.swift */; };
+		19806A94277CFE970039175B /* SecondTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19806A93277CFE970039175B /* SecondTableViewController.swift */; };
+		19806A96277D00340039175B /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19806A95277D00340039175B /* MainTabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,9 @@
 		19806A8B277CE9210039175B /* FirstTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstTableViewController.swift; sourceTree = "<group>"; };
 		19806A8D277CE9DB0039175B /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		19806A8F277CEA080039175B /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		19806A91277CFB5C0039175B /* DetaleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetaleViewController.swift; sourceTree = "<group>"; };
+		19806A93277CFE970039175B /* SecondTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondTableViewController.swift; sourceTree = "<group>"; };
+		19806A95277D00340039175B /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +68,10 @@
 			children = (
 				19806A77277CE8270039175B /* AppDelegate.swift */,
 				19806A79277CE8270039175B /* SceneDelegate.swift */,
+				19806A95277D00340039175B /* MainTabBarController.swift */,
 				19806A8B277CE9210039175B /* FirstTableViewController.swift */,
+				19806A91277CFB5C0039175B /* DetaleViewController.swift */,
+				19806A93277CFE970039175B /* SecondTableViewController.swift */,
 				19806A8D277CE9DB0039175B /* DataManager.swift */,
 				19806A8F277CEA080039175B /* Person.swift */,
 				19806A7D277CE8270039175B /* Main.storyboard */,
@@ -146,7 +155,10 @@
 			files = (
 				19806A90277CEA080039175B /* Person.swift in Sources */,
 				19806A78277CE8270039175B /* AppDelegate.swift in Sources */,
+				19806A96277D00340039175B /* MainTabBarController.swift in Sources */,
 				19806A8E277CE9DB0039175B /* DataManager.swift in Sources */,
+				19806A92277CFB5C0039175B /* DetaleViewController.swift in Sources */,
+				19806A94277CFE970039175B /* SecondTableViewController.swift in Sources */,
 				19806A7A277CE8270039175B /* SceneDelegate.swift in Sources */,
 				19806A8C277CE9210039175B /* FirstTableViewController.swift in Sources */,
 			);

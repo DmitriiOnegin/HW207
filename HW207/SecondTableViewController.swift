@@ -1,5 +1,5 @@
 //
-//  FirstTableViewController.swift
+//  SecondTableViewController.swift
 //  HW207
 //
 //  Created by Dmitrii Onegin on 29.12.2021.
@@ -7,11 +7,7 @@
 
 import UIKit
 
-class FirstTableViewController: UITableViewController {
-    
-  //  private let persons = Person.getPersons()
-    
-    var persons: [Person]!
+class SecondTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,26 +21,25 @@ class FirstTableViewController: UITableViewController {
 
     // MARK: - Table view data source
 
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        // #warning Incomplete implementation, return the number of sections
+        return 10
+    }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return persons.count
+        return 2
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "secondCell", for: indexPath)
 
-        let person = persons[indexPath.row]
-        
-        var content = cell.defaultContentConfiguration()
-        content.text = person.fullName
-        
-        cell.contentConfiguration = content
+        // Configure the cell...
 
         return cell
     }
-   
+  
 
     /*
     // Override to support conditional editing of the table view.
@@ -81,18 +76,14 @@ class FirstTableViewController: UITableViewController {
     }
     */
 
-   
+    /*
     // MARK: - Navigation
 
-    
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let detaleVC = segue.destination as? DetaleViewController else { return }
-        guard let indexPath = tableView.indexPathForSelectedRow else { return }
-        let person = persons[indexPath.row]
-        
-        detaleVC.person = person
-        
+        // Get the new view controller using segue.destination.
+        // Pass the selected object to the new view controller.
     }
-   
+    */
 
 }
