@@ -9,25 +9,12 @@ import UIKit
 
 class FirstTableViewController: UITableViewController {
     
-  //  private let persons = Person.getPersons()
-    
     var persons: [Person]!
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
-    }
 
     // MARK: - Table view data source
 
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
         return persons.count
     }
 
@@ -95,4 +82,17 @@ class FirstTableViewController: UITableViewController {
     }
    
 
+}
+
+
+extension FirstTableViewController: TableViewMyDelegate {
+    func getPersons(persons: [Person]) {
+        self.persons = persons
+    }
+    
+    
+}
+
+protocol TableViewMyDelegate {
+    func getPersons(persons: [Person])
 }
